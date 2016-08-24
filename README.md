@@ -9,7 +9,7 @@ Hackday goals:
 
 ## Links
 
-Marvel Developer Portal http://developer.marvel.com/
-All Things Angular https://angular.io/
-GraphQL Main Site http://graphql.org/
-GraphQL in golang https://github.com/graphql-go/graphql
+- Marvel Developer Portal http://developer.marvel.com/
+- All Things Angular https://angular.io/
+- GraphQL Main Site http://graphql.org/
+- GraphQL in golang https://github.com/graphql-go/graphql
