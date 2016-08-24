@@ -1,6 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {HTTP_PROVIDERS} from '@angular/http';
 import { HeroListComponent }    from './hero-list.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 
@@ -19,7 +20,8 @@ import { heroesRouting } from './heroes.routing';
     HeroDetailComponent
   ],
   providers: [
-    HeroService
+    HeroService,
+    HTTP_PROVIDERS
   ]
 })
 export class HeroesModule {}

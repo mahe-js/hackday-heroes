@@ -16,8 +16,7 @@ export class HeroListComponent implements OnInit {
   heroes: Observable<Hero[]>;
   selectedHero = {};
 
-  constructor(private heroService: HeroService,
-    private router:Router) {
+  constructor(private heroService: HeroService, private router:Router) {
   }
 
   ngOnInit() {

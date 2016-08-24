@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router'
 import { Hero } from '../hero';
 import { HeroService } from './hero.service';
 import {Subscription} from "rxjs";
+import {Observable} from "rxjs/Observable"
 
 @Component({
   moduleId: module.id,
@@ -12,13 +13,12 @@ import {Subscription} from "rxjs";
 export class HeroDetailComponent implements OnInit{
   constructor(private router: Router, private route: ActivatedRoute, private heroService: HeroService) {}
 
-  hero: Hero;
+  hero: Observable<Hero>;
   private sub: Subscription;
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      let id = +params['id']; // (+) converts string 'id' to a number
-      this.heroService.getHero(id).subscribe(hero => this.hero = hero);
+      this.hero = this.heroService.getHero(params['id']);
     });
   }
 
