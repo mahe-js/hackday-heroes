@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Router } from '@angular/router-deprecated'
-import { Hero } from './hero';
-import { HeroDetailComponent } from './hero-detail.component';
+import { Hero } from '../hero';
 import { HeroService } from './hero.service';
+import { HeroDetailComponent } from './hero-detail.component';
+import {Router} from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -25,7 +25,7 @@ export class HeroListComponent implements OnInit {
   }
 
   onSelect(hero: Hero) {
-    const link = ['Hero', {id: hero.id}]
+    let link = ['/hero', hero.id]
     this.router.navigate(link);
   }
 }

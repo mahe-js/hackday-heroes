@@ -1,2 +1,2 @@
-export {environment} from './environment';
-export {TourOfHeroesAppComponent} from './tour-of-heroes.component';
+export * from './environment';
+export * from './app.component';

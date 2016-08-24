@@ -5,10 +5,10 @@ describe('hackday-heroes App', function() {
 
   beforeEach(() => {
     page = new HackdayHeroesPage();
-  })
+  });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('hackday-heroes works!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });

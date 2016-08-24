@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Hero } from './hero';
+import { Hero } from '../hero';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 var heroes: Hero[] = [
