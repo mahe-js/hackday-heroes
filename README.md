@@ -2,6 +2,7 @@
 Learning AngularJS 2 and stuff.
 
 Hackday goals:
+
 1. Get stuff from Marvel API angular 2 way
 2. Add GraphQL to the mix, in front of the Marvel API
 3. Mix data from Marvel and own backend using GraphQL
